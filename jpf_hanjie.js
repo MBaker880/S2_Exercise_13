@@ -5,8 +5,8 @@
    Tutorial 11
    Tutorial Case
 
-   Author: 
-   Date:   
+   Author: Mackenzie Baker
+   Date:   3.5.2019
 
    Global Variables
    ================
@@ -53,8 +53,15 @@
       multi-dimensional array, puzzle.
 	
 */
+// Run the init function when the page loads
+window.onload = init;
 
-
+function init() {
+      // Insert the title for the first puzzle
+      document.getElementById("puzzleTitle").innerHTML = "Puzzle 1";
+      // Insert the html code for the firt puzzle table
+      document.getElementById("puzzle").innerHTML = drawPuzzle(puzzleHint, puzzleRating, puzzle1);
+}
 
 
 
